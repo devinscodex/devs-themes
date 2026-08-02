@@ -1,6 +1,6 @@
-# devs-themes
+# Devs Themes
 
-Central repo for my custom themes. Each app pulls its own ##copy** from here and is free to fine-tune it independently; this repo is canonical, not hard-linked to my apps.
+Central repo for my custom themes. Each app pulls its own **copy** from here and is free to fine-tune it independently; this repo is canonical, not hard-linked to my apps.
 
 `sync_all.py <family>` is the real one-command propagation path (see
 Format below) for Slate/webUI/Runestone-bonepaper; Alacritty's terminal
