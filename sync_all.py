@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 """Propagates one family's palettes/<family>.json into every real
-consumer -- Slate, Runestone, webUI -- in one command. Built 2026-07-31
-after a night of manually hand-editing the same 3 files for every color
-tweak; extended same day (Devin: "color syncs should now happen across
-Slate/Runestone and now WebUI") to call Slate's own pull_themes.sh too,
-so this is genuinely the one command instead of "run this, then also
-remember to run that other script." Not a symlink (the consumers are
-different file FORMATS -- Python dict loaded from JSON, an Obsidian CSS
-snippet, inline HTML CSS -- you can't symlink part of a differently-
-shaped file), but gets the same "one edit, one command" convenience
-where the target structure is known and stable.
+consumer -- Slate, Runestone, webUI -- in one command, instead of
+hand-editing the same files separately for every color tweak. Not a
+symlink (the consumers are different file FORMATS -- Python dict
+loaded from JSON, an Obsidian CSS snippet, inline HTML CSS -- you
+can't symlink part of a differently-shaped file), but gets the same
+"one edit, one command" convenience where the target structure is
+known and stable.
 
 Usage:
     python3 sync_all.py bonepaper
@@ -41,10 +38,10 @@ def load_palette(family: str) -> dict:
 def patch_webui(family: str, palette: dict, dry_run: bool) -> int:
     """Rewrites --ink/--ink-soft/--moss/--moss-solid inside the
     [data-theme="family-mode"] block. Only touches the 4 keys that
-    actually vary per Devin's live tweaks tonight (fg/muted_fg/
-    select_bg/highlight_bg) -- bg/bg-2/bg-3/line/card/sidebar are
-    structural and rarely change, left alone so a family-wide re-sync
-    doesn't accidentally revert an intentional structural edit."""
+    actually vary per palette edit (fg/muted_fg/select_bg/highlight_bg)
+    -- bg/bg-2/bg-3/line/card/sidebar are structural and rarely change,
+    left alone so a family-wide re-sync doesn't accidentally revert an
+    intentional structural edit."""
     if not WEBUI_HTML.exists():
         print(f"  webui: {WEBUI_HTML} not found, skipped")
         return 0
