@@ -1,4 +1,4 @@
-# themes-custom
+# devs-themes
 
 Central source of truth for Devin's custom theme families. Each real
 consumer — **Slate** (`slate/theme_data/`), **Runestone**
