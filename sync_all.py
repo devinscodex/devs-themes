@@ -19,14 +19,21 @@ import subprocess
 import sys
 from pathlib import Path
 
+# devs-themes/sync_all.py -> personal/ -> projects root. Slate lives one
+# level up (personal/slate); cairn and runestone don't live under
+# personal/ at all, so they're addressed from PROJECTS_ROOT instead --
+# two different roots because the 2026-08-03 projects/ reorg left the
+# real consumers split across personal/, cairn/, and MEG/, not one
+# consistent tree.
 REPO_ROOT = Path(__file__).parent.parent
-WEBUI_HTML = REPO_ROOT / "cairn" / "webui" / "index.html"
+PROJECTS_ROOT = REPO_ROOT.parent
+WEBUI_HTML = PROJECTS_ROOT / "cairn" / "webui" / "index.html"
 
 # family -> Runestone CSS snippet path, or None if no CSS counterpart
 # exists (e.g. Martin/MEG has never had a Runestone theme file).
 RUNESTONE_CSS = {
-    "bonepaper": REPO_ROOT / "runestone" / ".obsidian" / "snippets" / "bonepaper.css",
-    "slate": REPO_ROOT / "runestone" / ".obsidian" / "snippets" / "slate.css",
+    "bonepaper": PROJECTS_ROOT / "MEG" / "runestone" / ".obsidian" / "snippets" / "bonepaper.css",
+    "slate": PROJECTS_ROOT / "MEG" / "runestone" / ".obsidian" / "snippets" / "slate.css",
 }
 
 
