@@ -1,0 +1,21 @@
+[light]
+bg = "#bcab8a"
+fg = "#1d1812"
+button_bg = "#ae9c7b"
+entry_bg = "#bcab8a"
+canvas_bg = "#bcab8a"
+select_bg = "#34752a"
+muted_fg = "#554d3e"
+highlight_bg = "#34752a"
+external_link = "#7949ab"
+
+[dark]
+bg = "#17130e"
+fg = "#dad1bd"
+button_bg = "#28251f"
+entry_bg = "#17130e"
+canvas_bg = "#17130e"
+select_bg = "#aac98f"
+muted_fg = "#828b83"
+highlight_bg = "#aac98f"
+external_link = "#c294ca"
