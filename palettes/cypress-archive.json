@@ -11,11 +11,11 @@
     "external_link": "#9652af"
   },
   "dark": {
-    "bg": "#17130e",
+    "bg": "#0e1011",
     "fg": "#dad1bd",
-    "button_bg": "#28251f",
-    "entry_bg": "#17130e",
-    "canvas_bg": "#17130e",
+    "button_bg": "#1e2528",
+    "entry_bg": "#0e1011",
+    "canvas_bg": "#0e1011",
     "select_bg": "#aac98f",
     "muted_fg": "#828b83",
     "highlight_bg": "#aac98f",
