@@ -54,4 +54,5 @@ into every real consumer -- Slate (via `slate/pull_themes.sh`), webUI
 bonepaper Obsidian snippet. Alacritty's terminal themes need actual
 per-theme ANSI-palette design on top of the base 8 keys, so those stay
 hand-built in [dotfiles](https://github.com/devinscodex/dotfiles), not
-auto-synced.
+auto-synced -- including `cypress_midnight.toml`, the Alacritty-side use
+of this repo's `cypress-archive.json` values.
