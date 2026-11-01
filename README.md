@@ -46,6 +46,12 @@ verbatim, since this repo is shared across apps with different needs.
 `palettes/*.toml` mirrors the same data (`export_toml.py`, generated,
 never hand-edited -- re-run after any JSON edit).
 
+## Spicetify
+
+`spicetify/` holds the Cypress color schemes for Spicetify's `text` theme
+(MIT, forked from spicetify-themes; see `spicetify/LICENSE`). Values come
+from `palettes/cypress.json`. Install steps: `spicetify/README.md`.
+
 ## Syncing
 
 `sync_all.py <family>` propagates one family's `palettes/<family>.json`

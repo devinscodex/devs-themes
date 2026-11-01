@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Cypress",
+    "description": "Bonepaper x Everforest blend -- warm dark-brown or khaki-tan bg, sage-green accent. Adds CypressDark, CypressLight, and CypressMidnight (a cooler near-black variant) as color schemes for the text theme.",
+    "preview": "preview.png",
+    "readme": "README.md",
+    "usercss": "user.css",
+    "schemes": "color.ini",
+    "authors": [
+      { "name": "devinscodex", "url": "https://github.com/devinscodex" }
+    ],
+    "tags": ["dark", "light", "green"]
+  }
+]
